@@ -9,8 +9,7 @@ http://www.ajk.im/
 
 
 
-/* THANKS */
-
+/* THANKS! */
 AJK (http://ajk.im/) for being awesome.
 
 
