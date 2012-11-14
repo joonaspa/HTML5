@@ -13,7 +13,7 @@ html {
 .wrapper, .row {
     overflow: hidden;
     margin:0 auto;
-    max-width: $cols10;
+    max-width: 2*$cols10;
 }
 .row > div {
     float:right;

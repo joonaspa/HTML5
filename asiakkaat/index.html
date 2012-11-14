@@ -16,9 +16,9 @@
 
     <link rel="author" href="humans.txt" />
 
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css" />
     <!-- Print needs to be in a separate file for them to work in IE7/8 -->
-    <link rel="stylesheet" media="print" href="../css/print.css">
+    <link rel="stylesheet" media="print" href="../stylesheets/print.css">
 
     <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,7 +27,8 @@
     <!-- Google Web Fonts - Open Sans -->
     <script type="text/javascript">
       WebFontConfig = {
-        google: { families: [ 'Open+Sans:400italic,600italic,700italic,400,700,600,300:latin', 'Open+Sans+Condensed:700:latin' ] }
+        //google: { families: [ 'Open+Sans:400italic,600italic,700italic,400,700,600,300:latin', 'Open+Sans+Condensed:700:latin' ] }
+		google: { families: [ 'ABeeZee::latin' ] }
       };
       (function() {
         var wf = document.createElement('script');
@@ -38,18 +39,19 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })(); </script>
+	  
 </head>
 <body class="no-grid">
 
 <header>
     <div class="wrapper">
         <a class="logo" href="http://www.solita.fi">Solita</a>
-            Palvelut
-            Asiakkaat
+            <span class="hide-me">Palvelut</span>
+            <span class="hide-me">Asiakkaat</span>
             Yritys
-            Ajankohtaista
+            <span class="hide-me">Ajankohtaista</span>
             Ura
-            Yhteystiedot
+            <span class="hide-me">Yhteystiedot</span>
 
     </div>
 </header>
@@ -57,7 +59,7 @@
 <div class="main" role="main">
     <div class="wrapper">
 
-    <div class="matkaopas"><canvas id="scene" width="500" height="348"></canvas><img src="../img/matkaopas.jpg" /></div>
+    <div class="matkaopas"><canvas id="scene" width="250" height="348"></canvas><img src="../img/matkaopas.jpg" /></div>
       <script type="text/javascript">
           canvas = document.getElementById('scene');
           ctx = canvas.getContext('2d');
@@ -95,61 +97,83 @@
 
       <h1>Asiakkaat</h1>
 
+	  <section class="case">
       <img src="../img/case-oikeushallinto-small.jpg" />
-      Case Oikeushallinto
+      <h3 class="otsikko">Case Oikeushallinto</h3>
       Suomalainen edunvalvonta tehokkaammaksi yhteisellä järjestelmällä
-      Lue lisää
-
+      <div class="read-more">Lue lisää</div>
+	  </section>
+	  
+	  <section class="case">
       <img src="../img/case-sponda-small.jpg" />
-      Case Sponda
+      <span class="otsikko">Case Sponda</span>
       Dialogia sisäiseen ja ulkoiseen viestintään
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-fmi-small.jpg" />
-      Case Ilmatieteen laitos
+      <span class="otsikko">Case Ilmatieteen laitos</span>
       Neljännesmiljoonalle päivittäiselle käyttäjälle tietoa säästä verkossa
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-neot-small.jpg" />
-      Case Neot
+      <span class="otsikko">Case Neot</span>
       Polttoainetoimitukset hallintaan öljyterminaalista asiakkaalle
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-kastelli-small.jpg" />
-      Case Kastelli
+      <span class="otsikko">Case Kastelli</span>
       Verkkosivut ovat talovalmistajan tärkein palvelu- ja myyntikanava
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-elisa-listing.jpg" />
-      Case Elisa
+      <span class="otsikko">Case Elisa</span>
       Intranetin hakutoiminnon uudistaminen vauhdittaa myös asiakaspalvelua
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-helsinki-small.jpg" />
-      Case Helsingin kaupunki
+      <span class="otsikko">Case Helsingin kaupunki</span>
       Työsuojeludokumentoinnin sähköistämisellä tavoitellaan miljoonasäästöjä
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-rakennusteollisuusalan-small.jpg" />
-      Case rakennusalalta
+      <span class="otsikko">Case rakennusalalta</span>
       Jämäkkyyttä konserniohjaukseen
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-elintarvikealan-small.jpg" />
-      Case elintarviketeollisuudesta
+      <span class="otsikko">Case elintarviketeollisuudesta</span>
       Automatisoitu raportointi tukee liiketoimintayksiköiden päätöksentekoa
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/Case_Elmo_small.jpg" />
-      Case Lehtipiste
+      <span class="otsikko">Case Lehtipiste</span>
       Toiminnanohjausjärjestelmä tehostaa irtonumeromyyntiä
-      Lue lisää
+      <div class="read-more">Lue lisää</div>
+	  </section>
 
+	  <section class="case">
       <img src="../img/case-veripalvelu-small.jpg" />
-      Case Suomen Punaisen Ristin Veripalvelu
+      <span class="otsikko">Case Suomen Punaisen Ristin Veripalvelu</span>
       Veripalvelu pysyy pulssilla
-      Lue lisää
-
+      <div class="read-more">Lue lisää</div>
+	  </section>
+	  
       </div>
 </div>
 

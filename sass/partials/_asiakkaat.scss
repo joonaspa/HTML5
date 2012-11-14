@@ -7,8 +7,37 @@
 	background-color: #000000;
 	margin-bottom: 10px;
 	height: 350px;
+	max-width: 1000px;
 }
 
 .matkaopas img{
 	float: right;
+	@media screen and (max-width: 500px) {
+		display: none;
+    }
+	@media screen and (max-width: 1000px) {
+		width: 50%;
+    }
+}
+
+.hide-me {
+	@media screen and (max-width: 480px) {
+		display: none;
+    }
+}
+
+.case {
+	width: 253px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+
+.otsikko {
+	color: $brandcolor;
+}
+
+.read-more {
+	color: $brandcolor;
+	text-decoration: underline;
 }
